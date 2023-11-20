@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Document</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      input {
+        padding: 5px;
+        margin: 5px;
+      }
+
+      button {
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      #calculator-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator-container">
+      <input type="text" id="input1" placeholder="Enter number" />
+      <button type="button" onclick="calculate('+')">Add</button>
+      <button type="button" onclick="calculate('-')">Subtract</button>
+      <button type="button" onclick="calculate('*')">Multiply</button>
+      <button type="button" onclick="calculate('/')">Divide</button>
+      <input type="text" id="input2" placeholder="Enter number" />
+      <br />
+      Output: <span id="output">Output Here</span>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
